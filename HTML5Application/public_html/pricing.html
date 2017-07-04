@@ -1,0 +1,406 @@
+
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>OMG Subscription Model</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-state-machine/2.0.0/state-machine.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<meta name="viewport" content="width=device-width">
+  
+  
+      <link rel="stylesheet" href="css/style5.css">
+
+  
+</head>
+
+<body>
+
+	<div class="logo">
+				<img src="images/logo1.png"  width="7.5%";>
+				<div class="in">
+      		<h1> OMG Subscription Model </h1><br>
+            <p id="nc"> Your Protein Intake at present <span class="intake">&nbsp;</span> Grams/ Day</p><br/>
+            <p id="nc"> Your Protein need is <span class="display_weight">&nbsp;</span> Grams/ Day</p><br/>
+            <p id="nc"> Your Protein defciency is <span class="need">&nbsp;</span> Grams/ Day</p><br/>
+            <p id="nc"> Hence, your OMG need is <span class="needed">&nbsp;</span> Kgs/ Month</p><br/><br/><br/>
+    <div class="center">
+                 <span class="input input--madoka">
+                    <label class="input__label input__label--madoka" for="products">
+						<span class="input__label-content input__label-content--madoka"></span>
+					</label><br><br>
+					<!-- <select id="productvariation">
+                    <option  value="select">Choose your Protein</option>
+                    <option  value="whey_alpha">Whey Alpha</option>
+                    <option  value="whey_lite">Whey Lite</option>
+                   <!--  <option  value="soya_alpha">Soya Alpha</option>
+                    <option  value="meal_of_champions">Meal Of Champions</option>
+                    <option  value="creal_plus">Creal Plus</option> -->
+                    </select>					
+				</span> 
+                 <label id ="productvariation"><h6> Whey Alpha</h6></label>
+            </div>
+</div>
+            
+  	<div class="pricing-container">
+            
+		<div class="pricing-switcher">
+			<p class="fieldset">
+				<input type="radio" name="duration-1" value="monthly" id="monthly-1">
+				<label for="monthly-1" >Monthly </label>
+				<input type="radio" name="duration-1" value="Bi-Annual" id="Bi-Annual-1">
+				<label for="Bi-Annual-1">Bi-Annual</label>
+				<input type="radio" name="duration-1" value="Annual" id="Annual-1">
+				<label for="Annual-1">Annual</label>
+				<!-- <span class="switch"></span> -->
+				
+			</p>
+		</div>
+		<ul class="pricing-list bounce-invert" id="whey_alpha">
+        
+			<li id="highlighted">
+				<ul class="pricing-wrapper">
+					<li data-type="monthly" class="is-visible" onclick="getpackage('monthly','silver');">
+						<header class="pricing-header">
+							<h2>Silver</h2>
+							<div class="price">
+								<span class="currency">₹</span>
+								<span class="value">2,000</span>
+								<span class="duration">mo</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<!-- <li>Whey Alpha</li> -->
+								<li>  <em> 15 </em> Servings</li>
+								<li><em>30gms</em> Protein Per Scoop</li>
+								<li> You Save <em> 12.5%</em></li>
+                                <li> Cancellation Period <em> 2 months</em></li>
+                                <li>  <em> - </em> </li>
+                                <li>   <em> - </em> </li>
+                                <li>  Referral discounts at <em> 3%</em></li>
+                                <li>    <em> - </em> </li>
+                                <li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Pay</a>
+						</footer>
+					</li>
+					<li data-type="Bi-Annual" class="is-hidden" onclick="getpackage('biannual','silver');">
+						<header class="pricing-header">
+							<h2>Silver</h2>
+							<div class="price">
+								<span class="currency">₹</span>
+								<span class="value">10,500</span>
+								<span class="duration">yr</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li>  <em> 15 </em> Servings</li>
+								<li><em>15 gms</em> Protein Per Scoop</li>
+								<li> You Save <em> 12.5%</em></li>
+                                <li> Cancellation Period <em> 2 months</em></li>
+                                <li>   <em> - </em>  </li>
+                                <li>   <em> - </em> </li>
+                                <li>  Referral discounts at <em> 3%</em></li>
+                                <li>    <em> - </em> </li>
+                                <li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Pay</a>
+						</footer>
+					</li>
+					<li data-type="Annual" class="is-hidden" onclick="getpackage('annual','silver');">
+						<header class="pricing-header">
+							<h2>Silver</h2>
+							<div class="price">
+								<span class="currency">₹</span>
+								<span class="value">16,500</span>
+								<span class="duration">yr</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li>  <em> 15 </em> Servings</li>
+								<li><em>15 gms</em> Protein Per Scoop</li>
+								<li> You Save <em> 12.5%</em></li>
+                                <li> Cancellation Period <em> 2 months</em></li>
+                                <li>   <em> - </em>  </li>
+                                <li>   <em> - </em> </li>
+                                <li>  Referral discounts at <em> 3%</em></li>
+                                <li>    <em> - </em> </li>
+                                <li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Pay</a>
+						</footer>
+					</li>
+				</ul>
+			</li>
+			<li id="highlighted_gold" >
+				<ul class="pricing-wrapper">
+					<li data-type="monthly" class="is-visible" onclick="getpackage('monthly','gold');">
+						<header class="pricing-header">
+							<h2>Gold</h2>
+							<div class="price">
+								<span class="currency">₹</span>
+								<span class="value">3,400</span>
+								<span class="duration">mo</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li>  <em> 30 </em> Servings</li>
+								<li><em>30gms</em> Protein Per Scoop</li>
+								<li> You Save <em> 25%</em></li>
+                                <li> Cancellation Period <em> 1 month</em></li>
+                                <li>    <em> - </em> </li>
+                                <li> We offer you <em>OMG's Beta tested Drinks </em> </li>
+                                <li>  Referral discounts at <em> 6%</em></li>
+                                <li> <em>Free OMG Branded Polo T-shirts </em> </li>
+                                <li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Pay</a>
+						</footer>
+					</li>
+					<li data-type="Bi-Annual" class="is-hidden" onclick="getpackage('biannual','gold');">
+						<header class="pricing-header">
+							<h2>Gold</h2>
+							<div class="price">
+								<span class="currency">₹</span>
+								<span class="value">18,000</span>
+								<span class="duration">yr</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+                                <li>  <em> 30 </em> Servings</li>
+								<li><em>30 gms</em> Protein Per Scoop</li>
+								<li> You Save <em> 25%</em></li>
+                                <li> Cancellation Period <em> 1 month</em></li>
+                                <li>    <em> - </em> </li>
+                                <li> We offer you  <em>OMG's Beta tested Drinks </em>  </li>
+                                <li>  Referral discounts at <em> 6%</em></li>
+                                <li> <em>Free OMG Branded Polo T-shirts </em> </li>
+                                <li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Pay</a>
+						</footer>
+					</li>
+					<li data-type="Annual" class="is-hidden" onclick="getpackage('annual','gold');">
+						<header class="pricing-header">
+							<h2>Gold</h2>
+							<div class="price">
+								<span class="currency">₹</span>
+								<span class="value">30,000</span>
+								<span class="duration">yr</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+							    <li>  <em> 30 </em> Servings</li>
+								<li><em>30 gms</em> Protein Per Scoop</li>
+								<li> You Save <em> 25%</em></li>
+                                <li> Cancellation Period <em> 1 month</em></li>
+                                <li>   <em> - </em>  </li>
+                                <li> We offer you <em>OMG's Beta tested Drinks </em></li>
+                                <li>  Referral discounts at <em> 6%</em></li>
+                                <li>  <em>Free OMG Branded Polo T-shirts</em>  </li>
+                                <li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Pay</a>
+						</footer>
+					</li>
+				</ul>
+			</li>
+			<li id="highlighted_platnium">
+				<ul class="pricing-wrapper">
+					<li data-type="monthly" class="is-visible" onclick="getpackage('monthly','platinum');">
+						<header class="pricing-header">
+							<h2>Platinum</h2>
+							<div class="price">
+								<span class="currency">₹</span>
+								<span class="value">6,300</span>
+								<span class="duration">mo</span>
+							</div>
+						</header>   
+						<div class="pricing-body">
+							<ul class="pricing-features">
+					            <li>  <em> 60</em> Servings</li>
+								<li><em>30 gms</em> Protein Per Scoop</li>
+								<li> You Save <em> 37.5%</em></li>
+                                <li> Cancellation Period <em> Unlimited</em></li>
+                                <li>  <em>OMG's Exclusive BALLER Protein Balls</em>  </li>
+                                <li> We offer you  <em>OMG's Beta tested Drinks </em> </li>
+                                <li>  Referral discounts at <em> 10%</em></li>
+                                <li>  <em>Free OMG Branded Polo T-shirts</em></li>
+                                <li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Pay</a>
+						</footer>
+					</li>
+					<li data-type="Bi-Annual" class="is-hidden" onclick="getpackage('biannual','platinum');">
+						<header class="pricing-header">
+							<h2>Platinum</h2>
+							<div class="price">
+								<span class="currency">₹</span>
+								<span class="value">33,000</span>
+								<span class="duration">yr</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								 <li>  <em> 60</em> Servings</li>
+								<li><em>30gms</em> Protein Per Scoop</li>
+								<li> You Save <em> 37.5%</em></li>
+                                <li> Cancellation Period <em> Unlimited</em></li>
+                                <li> <em>OMG's Exclusive BALLER Protein Balls </em>  </li>
+                                <li> We offer you  <em>OMG's Beta tested Drinks </em> </li>
+                                <li>  Referral discounts at <em> 10%</em></li>
+                                <li>  <em> Free OMG Branded Polo T-shirts</em> </li>
+                                <li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Pay</a>
+						</footer>
+					</li>
+					<li data-type="Annual" class="is-hidden" onclick="getpackage('annual','platinum');">
+						<header class="pricing-header">
+							<h2>Platinum</h2>
+							<div class="price">
+								<span class="currency">₹</span>
+								<span class="value">54,000</span>
+								<span class="duration">yr</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								 <li>  <em> 60 </em> Servings</li>
+								<li><em>30gms</em> Protein Per Scoop</li>
+								<li> You Save <em> 37.5%</em></li>
+                                <li> Cancellation Period <em> Unlimited</em></li>
+                                <li> <em>OMG's Exclusive BALLER Protein Balls</em>  </li>
+                                <li> We offer you <em>OMG's Beta tested Drinks </em>  </li>
+                                <li>  Referral discounts at <em> 10%</em></li>
+                                <li>  <em> Free OMG Branded Polo T-shirts </em> </li>
+                                <li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Pay</a>
+						</footer>
+					</li>
+				</ul>
+			</li>
+
+		</ul>
+        
+        
+	
+			
+    </div>
+
+    <script src="js/index.js"></script>
+<script>
+
+$(document).ready(function(){
+
+var weight = localStorage.getItem("weight");
+var intake = localStorage.getItem("intake");
+
+//calculate need protein
+if(localStorage.getItem("fitness") == 0 )
+{
+var fit = "2.0";
+}
+else
+{
+fit ="1.5";
+}
+console.log(fit);
+console.log(weight);
+var total_weight = localStorage.getItem("weight") * fit;
+var need = total_weight - localStorage.getItem("intake");
+display_weight = total_weight;
+needed =(need * 30) / 1000;
+var needed_class =  parseInt(needed);
+console.log(needed_class);
+ if(needed_class >= 2 )
+    {
+    $('#highlighted_platnium').addClass("exclusive");
+    }
+    else if(needed_class >= 1){
+    $('#highlighted_gold').addClass("exclusive");
+    }
+    else if(needed_class ==  0){
+    $('#highlighted').addClass("exclusive");
+    }
+$('.needed').text(needed);
+   $('.intake').text(intake);
+   $('.display_weight').text(display_weight);
+   $('.need').text(need);
+});
+
+function getpackage(duration,plan){
+var name = localStorage.getItem("name");
+var email = localStorage.getItem("email");
+var mobile = localStorage.getItem("mobile");
+var fitness = localStorage.getItem("fitness");
+var gender = localStorage.getItem("gender");
+var reference = localStorage.getItem("reference");
+var weight = localStorage.getItem("weight");
+var intake = localStorage.getItem("intake");
+
+//calculate need protein
+if(localStorage.getItem("fitness") == 0 )
+{
+var fit = "1.5";
+}
+else
+{
+fit ="1";
+}
+//console.log(fit);
+//console.log(weight);
+var total_weight = localStorage.getItem("weight") * fit;
+var need = total_weight - localStorage.getItem("intake");
+
+
+needed = (need * 30) / 1000;
+console.log(needed);
+//$('.needed').text(needed);
+
+
+var plan_duration = duration;
+var plan_package = plan;
+console.log(name);
+console.log(email);
+$.ajax({
+
+    type: "POST",
+    url: "api.php",
+    data: {name : name ,email : email ,mobile : mobile,fitness : fitness,gender:gender,reference:reference,weight:weight,plan_duration:plan_duration,plan_package:plan_package},
+    success: function(output){
+        console.log(output);
+    }
+});
+}
+
+</script>
+</body>
+</html>

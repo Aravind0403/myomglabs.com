@@ -1,0 +1,147 @@
+.button {
+    background-color: #008544; /* Green */
+    border: none;
+    color: white;
+    padding: 20px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21.5px;
+	
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 80%;
+	height:60px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    font-width:100%;
+    
+}
+
+.button:hover{
+	background: #0d6531;
+	
+}
+
+.container{
+   /* padding-top: 1%;*/
+    padding-bottom: 8%;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+	width:40%;
+	padding-top:2%;
+	    display: block;
+		    text-align: left;
+	
+	
+	
+	
+	/* width: 900px;
+	margin: auto; */
+	background-color:#CFCDC7;
+	
+	/* overflow:auto;
+	overflow:auto;
+	 border: 5px  solid #7DCEA0; */
+    
+
+	
+
+ 
+   
+   
+}
+.input
+{
+	
+ 
+    border: none;
+    
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12.5px;
+	
+    margin: 2px 2px;
+    cursor: pointer;
+    width: 100%;
+  
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    font-width:100%;
+    
+}
+#ih
+{
+	
+font-size: 16px;	
+	
+}
+.arr
+{
+   font-family: 'Lato', sans-serif;
+   font-weight: bold;
+   font-size: 22px;
+   padding-top: 5%;
+   text-align: center;
+    max-width: 440px;
+    margin: 0 0 .4em;
+	padding: 0.8em 1.0em;
+	padding-left:5%;
+   
+}
+.in {
+
+    font-family: 'Open Sans', sans-serif;
+   /* font-weight: bold; */
+   font-size: 25px;
+ /*  padding-top: 5%;*/
+    text-align: center;
+    max-width: 440px;
+    margin: 0 auto;
+	padding: 0.8em 1.0em;
+	padding-left:5%;
+
+}
+
+
+#s {
+
+
+   /* padding-top: 5%;*/
+    text-align: center;
+    max-width: 440px;
+    margin: 0 auto;
+	
+
+}
+.inp{
+	
+    padding-top: 2%;
+    text-align: center;
+    max-width: 440px;
+    margin: 1 auto;
+	height:60px;
+	width:100%;
+	
+}
+
+
+.bn{
+    padding-down: 10%;
+    text-align: center;
+    max-width: 440px;
+    margin: 0 auto;
+	height:60px;
+	width:105%;
+
+}
+.logo{
+    padding-top: 3%;
+    padding-left: 6%;
+    margin-right: 10px;
+
+}
+
